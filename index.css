@@ -1,0 +1,60 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html{
+  background: linear-gradient(to top, #09203f 0%, #537895 100%) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  background: linear-gradient(to top, #09203f 0%, #537895 100%) no-repeat center center fixed;
+}
+#data,
+#data2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bolder;
+  color: aliceblue;
+}
+select {
+  color: aliceblue;
+  padding: 8px;
+  border: none;
+  margin-bottom: 75px;
+  text-align: center;
+  font-style: oblique;
+  background-color: transparent !important;
+}
+option {
+  color: black;
+}
+.form-select {
+  background-color: transparent;
+}
+@media screen and (max-width: 576px) {
+}
+hr{
+  font-weight: bolder;
+  border: 2px solid aliceblue;
+
+}
+span{
+  color: aliceblue;
+  font-size: x-large;
+}
+p{
+  font-size: large;
+  font-weight: lighter;
+}
+@keyframes example {
+  from {left:-50px;}
+  to {left:50px;}
+}
+img{
+  position: relative;
+  animation: example 2s;
+  animation-timing-function: linear;
+}
