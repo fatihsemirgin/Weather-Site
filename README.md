@@ -1,2 +1,2 @@
 # Weather-Site
-Weather of cities in Türkiye
+Current weather of cities in Türkiye
