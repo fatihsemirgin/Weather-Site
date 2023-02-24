@@ -45,6 +45,14 @@ option {
     position: relative;
     bottom: 35px;
   }
+  #img {
+    width: 50px;
+    height: 50px;
+  }
+  #first_hour > div > *,
+  #daily > div > * {
+    font-size: x-small !important;
+  }
 }
 hr {
   font-weight: bolder;
@@ -66,7 +74,7 @@ p {
     left: 50px;
   }
 }
-img {
+#first_img {
   position: relative;
   animation: example 2s;
   animation-timing-function: linear;
@@ -87,27 +95,22 @@ a:hover {
   color: antiquewhite;
 }
 .text {
-  color: darkblue;
   width: 217px;
   background-color: none;
   opacity: 0.5;
   font-weight: bolder;
-  border: 1px solid;
-  border-radius: 5%;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
   padding: 3px;
   font-size: large;
   text-align: center;
   caret-color: rgb(60, 63, 66);
 }
-::placeholder{
-color: darkblue;
-opacity: 0.6;
+::placeholder {
+  color: darkblue;
+  opacity: 0.6;
 }
-#data_row{
-  /* position: relative;
-  bottom: 115px; */
-}
-#search_data{
+#search_data {
   position: relative;
   height: 150px;
   width: 230px;
@@ -115,7 +118,7 @@ opacity: 0.6;
   overflow-x: hidden;
   /* top: 175px; */
 }
-ul{
+ul {
   width: 217px;
   padding: 5px;
   position: absolute;
@@ -125,15 +128,28 @@ ul{
   flex-direction: column;
   justify-content: center;
 }
-li{
+li {
   color: aliceblue;
   border: 1px solid;
   background-color: #537895;
   opacity: 1;
   z-index: 5;
 }
-li:hover{
+li:hover {
   cursor: pointer;
   opacity: 1;
   color: black;
+}
+#first_hour,
+#daily {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: auto;
+  padding: 5px;
+}
+#first_hour > div > *,
+#daily > div > *  {
+  font-size: small;
+  color: aliceblue;
 }
