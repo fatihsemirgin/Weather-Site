@@ -18,7 +18,10 @@
     <title>HAVA DURUMU</title>
   </head>
   <body>
-    <nav><a href="#">ANLIK</a><a href="#">GÜNLÜK</a></nav>
+    <nav>
+      <a href="#data_row">Anlık</a><a href="#data_row2">Saatlik</a
+      ><a href="#data_row3">Günlük</a>
+    </nav>
 
     <h1 class="text-center mt-1" style="color: azure">HAVA DURUMU</h1>
 
@@ -46,23 +49,24 @@
           </div>
         </div>
       </div>
-      <div id="data_row" class="row">
-        <h4 style="text-align: start">Anlık</h4>
+      <div id="data_row" class="row d-none mt-3">
+        <h4 style="text-align: start; color:aliceblue; text-decoration: underline;">Anlık</h4>
         <div class="col-sm-6">
           <div id="data2" class="text-center"></div>
         </div>
         <div id="data" class="col-sm-6 text-center"></div>
       </div>
-      <div id="data_row2" class="row">
-        <h4 style="text-align: start">Saatlik</h4>
-        <div id="first_hour"></div>
+      <div id="data_row2" class="row d-none">
+        <h4 style="text-align: start; color:aliceblue; text-decoration: underline;">Saatlik</h4>
+        <div id="first_hour" onmouseover="this.style.overflowX='scroll'"
+        onmouseout="this.style.overflow='hidden'"></div>
       </div>
-      <div id="data_row3" class="row">
-        <h4 style="text-align: start">Günlük</h4>
-        <div id="daily"></div>
+      <div id="data_row3" class="row d-none mt-3">
+        <h4 style="text-align: start; color:aliceblue; text-decoration: underline;">Günlük</h4>
+        <div id="daily" onmouseover="this.style.overflowX='scroll'"
+        onmouseout="this.style.overflow='hidden'"></div>
       </div>
     </div>
-
     <footer class="text-center mt-4"></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
